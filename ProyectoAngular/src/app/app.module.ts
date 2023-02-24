@@ -19,30 +19,17 @@ import { NavegacionComponent } from './components/navegacion/navegacion.componen
 import { Error404Component } from './components/error404/error404.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
 const routes: Routes= [
   
-  {path: 'educacion', component:EducacionComponent},
   
-  {path: 'experiencia', component:ExperienciaComponent},
-  
-  {path: 'skills', component:HardsoftskillsComponent},
-
-  {path: 'proyectos', component:ProyectosComponent},
-  
+  {path: 'home', component:PortfolioComponent},
   {path: 'login', component:LoginComponent},
-
-  {path: 'acerca-de-mi', component:AcercaDeMiComponent},
-
-  {path: 'inicio', component:HomeComponent},
-  
-  {path: '', component:HomeComponent, pathMatch: 'full'},
-
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component:Error404Component},
-
-
 ];
 
 
@@ -61,6 +48,7 @@ const routes: Routes= [
     LoginComponent,
     NavegacionComponent,
     Error404Component,
+    PortfolioComponent,
     
   ],
 

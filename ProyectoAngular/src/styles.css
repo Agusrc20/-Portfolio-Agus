@@ -80,7 +80,7 @@ form, button,input,textarea,select{
     font-size: inherit;
     -webkit-hyphens: auto;
             hyphens:auto;
-    background-color: transparent;
+    background-color: none;
     display: flex;
     color: inherit;
 }
@@ -88,66 +88,42 @@ form, button,input,textarea,select{
 body{
     font-family: var(--tipo-principal);
     font-size: 100%;
+
+    
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+
+    background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
     color: var(--blanco);
+
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
+    
+	
     /*cursor: none;*/
 }
 
-.circulos{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    filter: blur(40px);
-    animation: circulo1 20s linear infinite both;
+.submit{
+    position: relative;
+    color: white;
+	background:none;
+
+    width: 50%;
+	padding: 5%;
+    z-index: 2;
+   
+    display: inline-block;
+
+    justify-content: center;
+    align-items: center; 
+
+    text-align: left;
+    margin-left: 25%;
+    
+    
 }
 
-.circulos .circulo{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: circulo1 50s linear infinite both;
-}
-
-.circulos .circulo1{
-    top:0%;
-    left:0%;
-}
-
-.circulos .circulo1 .path{
-    fill: rgb(183, 0, 255);
-}
-
-.circulos .circulo2{
-    top:0%;
-    right:0%;
-}
-
-.circulos .circulo2 .path{
-    fill: rgb(0, 174, 255);
-}
-
-.circulos .circulo3{
-    bottom:0%;
-    left:0%;
-}
-
-.circulos .circulo3 .path{
-    fill: rgb(255, 217, 0);
-}
-
-.circulos .circulo4{
-    bottom:0%;
-    right:0%;
-}
-
-.circulos .circulo4 .path{
-    fill: rgb(255, 0, 157);
+.form-group{
+    padding: 2%;
 }
 
 header {
@@ -218,7 +194,7 @@ header button{
    
    font-size:110%;
     text-align: center;
-    
+
     position: relative;
     z-index: 2;
 
@@ -431,9 +407,13 @@ header button{
     color: var(--blanco); 
 }
 
+.border{
+    text-align: center;
+}
 .about .h2{
     color: var(--blanco);
     margin: 0 0 1rem;  
+    text-align: center;
 }
 
 .edu .ul .li{
@@ -453,6 +433,7 @@ header button{
 }
 
 .edu .ul .li .descripcion{
+    text-align: center;
     color: white;
     padding: 1em;
     transition: all .5s ease;
@@ -477,6 +458,7 @@ header button{
 
 .about .li{
     margin:0 1em;
+    text-align: center;
 }
 
 .about .svg{
