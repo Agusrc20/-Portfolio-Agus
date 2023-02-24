@@ -1,0 +1,7 @@
+.footer{
+    margin:1em 0;
+    text-align: center;
+    color:var(--blanco);
+    position: relative;
+    z-index: 2;
+}

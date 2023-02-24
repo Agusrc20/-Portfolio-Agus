@@ -1,0 +1,19 @@
+.navbar {
+    position: relative;
+	width:100%;
+    
+    overflow:hidden;
+	background:none;
+	padding: 1%;
+    position: relative;
+    
+    
+
+
+text-align: center;
+z-index: 4;
+	
+}
+.form-inline{
+    margin-left: 50%;
+}

@@ -1,0 +1,63 @@
+{
+    "name":"Agustina Crego",
+    "profile":"../assets/images/perfil.jpg",
+    "position":"Frontend Developer",
+    "linkedin":"Visita mi LinkedIn",
+    "github":"Visita mi Github ",
+    
+    "aboutme":"Acerca de mi",
+    "ubication":"Buenos Aires, Argentina",
+    "description":"Soy una chica proactiva, analítica y organizada",
+    "age":"Tengo 20 años",
+    "likes":"Me gusta la robótica y aprender cosas nuevas",
+    "dislikes":"No me gusta bailar",
+
+    "experience":"Experiencia",
+    "job1":"Fui vendedora en una tienda de ropa infantil y para bebés en Morón",
+    "job2":"Actualmente doy clases particulares a nivel primario",
+    "message":"Me encuentro motivada para poder aplicar mis nuevos conocimientos en mis futuros trabajos :)",
+    
+    
+    "name1":"Play Kids",
+    "img1":"../assets/images/Playkids.jpg",
+    "position1":"Experiencia en ventas",
+    "time1":"(2022)",
+    
+    "name2":"Clases Particulares",
+    "img2":"../assets/images/clases.png",
+    "position2":"Experiencia dando clases",
+    "time2":"(2023)",
+    
+    "education":[{
+        "school":"Universidad Nacional de la Matanza",
+        "title":"Ingeniería en Informática ",
+        "img":"../assets/images/unlam.jpg",
+        "collegedegree":"",
+        "score":"Actualmente cursando segundo año en la carrera ",
+        "start":"2020",
+        "end":"Actualidad"
+    },
+
+    {
+        "school":"Instituto Virginia Gamba",
+        "title":"Bachiller en Economía y Administración",
+        "img":"../assets/images/gamba.jpg",
+        "collegedegree":"9.71",
+        "score":"9.71",
+        "start":"2015",
+        "end":"2020"
+    }],
+    
+    "hardsoftskill":"Hard & Soft Skills",
+
+    "proyect":"Proyectos",
+    "proyect1":"Portfolio personal",
+    "time":"2023",
+    "imgport":"../assets/images/port.png",
+  
+
+    "footer":"Made with love ♥ Agustina Crego"
+}
+
+    
+

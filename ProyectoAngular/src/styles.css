@@ -3,7 +3,7 @@
     --blanco: #ffffff;
     --blanco-2:rgb(255, 255, 255, .2);
     --negro:#181818;
-    --negro-5:rgba(0,0,0,0.5);
+    --negro-5:rgba(156, 82, 82, 0.5);
     --negro-7: rgba(0, 0, 0, 0.75);
 
     --tipo-titular: 'Playfair Display', serif;
@@ -39,8 +39,9 @@ img , figure{
 a{
     display: block;
     text-decoration: none;
-    color: inherit;
-    *cursor: none;
+    color:#ffffff;
+    font-family: var(--tipo-principal);
+    /*cursor: none;*/
 }
 
 video{
@@ -92,7 +93,7 @@ body{
     color: var(--blanco);
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    cursor: none;
+    /*cursor: none;*/
 }
 
 .circulos{
@@ -155,7 +156,7 @@ header {
 	background:none;
 	
     position: relative;
-    z-index: 3;
+    z-index: 2;
     animation:aparecer1 3s ease 1 both;  
 }
 
@@ -175,7 +176,7 @@ header .logo {
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
 
-	float:left;  
+	float:none;  
 }
 
 header nav {
@@ -215,15 +216,18 @@ header button{
     background: var(--negro-5);
     margin: 0 0 1em;
    
+   font-size:110%;
     text-align: center;
     
     position: relative;
     z-index: 2;
+
+    
 }
 
 .seccion{
     width:100%;
-    min-height: 100vh;
+    min-height: 10vh;
     padding: 2em;
     
     display:flex;
@@ -231,6 +235,7 @@ header button{
     justify-content: center;
     align-items: center;
     animation:aparecer1 3s ease 1 both;
+    
 }
 
 .seccion .info{
@@ -261,12 +266,15 @@ header button{
     padding: 2em;
 }
 
-.btn-rigth{
-    margin: 0 2em;  
+.boton{
+    position: relative;
     color:white;
+    size-adjust: 20px;
+    }
+
+    .btn{background-color: #4CAF50;}
+
     
- 
-}
 
 .seccion .ul{
     margin: 2em 0 2em;
@@ -280,20 +288,15 @@ header button{
 .seccion .perfil{
     background-color: lightgoldenrodyellow;
 
-    width:40%;
+    width:30%;
     min-height: 20vh;
-   
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+    position:relative;
     
     margin-left: auto; 
     margin-right: auto;
     
-    border-radius: 10em;
+    border-radius: 120em;
+    
 }
 
 .seccion .banner{  
@@ -311,6 +314,8 @@ header button{
 
 .seccion .ul .li{
     margin: 0 1em;
+    color: var(--blanco);
+   font-family: var(--tipo-principal);
 }
 
 .seccion .ul .a{
@@ -318,10 +323,12 @@ header button{
     border-radius: 50%;
     padding:  1em 1em 1em;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     transition: all .5s ease;
     animation: aparecer1 2s ease 1 backwards;
-    color:var(--blanco);
+    color: var(--blanco);
+    font-family: var(--tipo-principal);
+   
 }
 
 .seccion .ul>:nth-child(2) .a{
@@ -338,7 +345,7 @@ header button{
     font-size: 5em;
     line-height: 1em ;
     color: var(--blanco);
-    mix-blend-mode: exclusion;    
+    /*mix-blend-mode: exclusion;    */
 }
 
 .seccion .h3{
@@ -429,6 +436,29 @@ header button{
     margin: 0 0 1rem;  
 }
 
+.edu .ul .li{
+    animation:aparecer1 3s ease 1 both
+}
+
+.edu .ul .li .logo{
+
+    width:10%;
+    min-height: 20vh;
+    position:relative;
+    
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 50%;
+    ;
+}
+
+.edu .ul .li .descripcion{
+    color: white;
+    padding: 1em;
+    transition: all .5s ease;
+    font-family: var(--tipo-principal);
+}
+
 .about .p{
     color: var(--blanco);
     max-width: 40rem;
@@ -452,16 +482,10 @@ header button{
 .about .svg{
     width: 3em;
     height: 3em;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
-.footer{
-    padding: 1em 0;
-    text-align: center;
-    color:var(--blanco);
-    position: relative;
-    z-index: 2;
-}
+
 
 /*cursor*/
 @keyframes circulo1{
